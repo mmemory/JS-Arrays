@@ -232,4 +232,8 @@ longestArray();
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
-  //Code Here
+var both = function () {
+    return arr1.concat(arr2);
+};
+
+both();
