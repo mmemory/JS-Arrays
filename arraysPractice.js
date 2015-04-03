@@ -172,8 +172,15 @@ addItem('Sausage');
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
-  //Code Here
+var maker = function () {
+    var numArray = [];
+    for (var i = 1; i < 216; i++) {
+        numArray.push(i);
+    }
+    return numArray;
+};
 
+maker();
 
 
 //Next Problem
