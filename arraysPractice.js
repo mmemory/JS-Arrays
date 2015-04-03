@@ -139,22 +139,34 @@ reverse(str);
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
-  and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
-  second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList,
-  remove that item from the your grocery list and return the new, updated grocery list. Once you do that,
+  and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the second is an item to remove from myGroceryList. If the second argument (or the item to add or remove) matches an item in myGroceryList, remove that item from the your grocery list and return the new, updated grocery list. Once you do that,
   write another function called addItem that is given two arguments, the first is myGroceryList
   and the second is an item to add to your grocery list. In addItem add the item you passed in to
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+var removeItem = function (itemToRemove) {
+
+    var indexOfItemToRemove = myGroceryList.indexOf(itemToRemove);
+
+    if (indexOfItemToRemove > -1) {
+        myGroceryList.splice(indexOfItemToRemove, 1);
+    }
+    return myGroceryList;
+};
+
+var addItem = function (itemToAdd) {
+    myGroceryList.push(itemToAdd);
+    return myGroceryList;
+};
+
+removeItem('pizza');
+
+addItem('Sausage');
+
 
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
-
-
-
-//Next Problem
 
 
 
