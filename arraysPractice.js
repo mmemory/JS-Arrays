@@ -29,8 +29,8 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
 var looper = function (arr) {
-    for (i = 0; i < arr.length; i++) {
-        alert(family[i]);
+    for (z = 0; z < arr.length; z++) {
+        alert(family[z]);
     }
 };
 
@@ -103,20 +103,17 @@ divider();
 
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
-}
+};
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above your given a function that will return a random number between 0 and 30, and an array full or numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
 var finder = function () {
     var randomNumber = getRandomArbitrary();
-    for (var i = 0; i < numbers.length; i++) {
         if (numbers.indexOf(randomNumber) > -1) {
             console.log(randomNumber);
             return true;
-        } else {
-            return false;
         }
-    }
+    return false;
 };
 
 finder();
@@ -211,8 +208,8 @@ var arr2 = [];
 for(var i = 0; i < num1; i++){
   arr1.push(i);
 }
-for(var i = 0; i < num2; i++){
-  arr2.push(i);
+for(var z = 0; z < num2; z++){
+  arr2.push(z);
 }
 //Above is some code that adds a random number to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
